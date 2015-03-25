@@ -119,6 +119,8 @@ else
     1.3.0)
       if [[ "$HADOOP_MAJOR_VERSION" == "1" ]]; then
         wget http://s3.amazonaws.com/spark-related-packages/spark-1.3.0-bin-hadoop1.tgz
+	  elif [[ "$HADOOP_MAJOR_VERSION" == "2.4" ]]; then
+        wget http://s3.amazonaws.com/spark-related-packages/spark-1.3.0-bin-hadoop2.4.tgz
       else
         wget http://s3.amazonaws.com/spark-related-packages/spark-1.3.0-bin-cdh4.tgz
       fi
